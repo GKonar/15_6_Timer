@@ -87,6 +87,12 @@ var Stopwatch = function () {
             var nextRound = document.createElement('li');
             nextRound.innerHTML = "Beer time, " + this.format(this.times) + " Yeeeaah!!";
             roundTime.appendChild(nextRound);
+            this.times = {
+                minutes: 0,
+                seconds: 0,
+                miliseconds: 0
+            };
+            this.print(this.times);
         }
     }, {
         key: 'clear',
